@@ -38,9 +38,7 @@ namespace RT {
             mainCamera = GetComponent<Camera>();
 
             // Create a new texture to render to
-            const int width = 640;
-            const int height = 360;
-            screen = new Texture2D((int)(width * resolution), (int)(height * resolution));
+            screen = new Texture2D((int)(Screen.width * resolution), (int)(Screen.height * resolution));
 
             // Find the reflective shader to use (Specular)
             reflectiveShader = Shader.Find("Specular");
